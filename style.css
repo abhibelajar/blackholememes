@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: #000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  padding: 20px;
+}
+
+.typing-text {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  opacity: 0.75;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: white;
+  color: black;
+}
